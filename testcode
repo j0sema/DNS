@@ -1,0 +1,28 @@
+
+@ppe1 = (p1,p2,p3,p4,p5);
+@ppe2 = (p6,p7,p8,p9,p10,p11);
+@ppe3 = (p11,p12,p13,p14,p15);
+@ppe4 = (p16,p17,p18,p19,p20);
+$puertos{"pe1"} = [p1,p2,p3,p4,p5];
+$puertos{"pe2"} = [@ppe2];;
+$puertos{"pe3"} = (p11,p12,p13,p14,p15);
+$puertos{"pe4"} = (p16,p17,p18,p19,p20);
+
+
+foreach $p (@{$puertos{"pe1"}}){
+   print "puerto $p \n";
+}
+foreach $p (@ppe2){
+   print "puerto $p \n";
+}
+
+
+$cadena = "array";
+
+@array1 = (p1, p2, p3);
+@$cadena = (p4, p5, p6);
+
+print @array1;
+print "\n";
+print @array;
+print "\n";
